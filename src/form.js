@@ -85,11 +85,9 @@ function Form(props){
                 <option value='' disabled>Select Role</option>
                 <option value='Front End Engineer'>Front End Engineer</option>
                 <option value='Back End Engineer'>Back End Engineer</option>
-                <option value='Full Stack Engineer'>Full Stack Engineer</option>
-                <option value='UX/UI Engineer'>UX/UI Engineer</option>
+                <option value='Full Stack Developer'>Full Stack Developer</option>
+                <option value='UX/UI Designer'>UX/UI Designer</option>
                 <option value='Software Engineer'>Software Engineer</option>
-                <option value='Data Science Engineer'>Data Science Engineer</option>
-                <option value='Machine Learning Engineer'>Machine Learning Engineer</option>
             </select>
             <button type='submit' value='submit'>Add Member</button>
         </form>

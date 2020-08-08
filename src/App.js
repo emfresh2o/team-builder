@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Member from './teamMember';
 import Form from './form';
+import Error from './error';
 import './App.css';
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <div className='form-container'>
-        <h1>Add New Member</h1>
+        <h2>New Member</h2>
         <Form addNewMember={addNewMember} handleError={handleError}/>
       </div>
       <Member members={members}/>
