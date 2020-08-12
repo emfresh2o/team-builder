@@ -4,7 +4,7 @@ import React, { useState } from 'react';
     function MembersForm(props) {
         const [name, setName] = useState('');
         const [email, setEmail] = useState('');
-        const [title, setTitle] = useState('')
+        const [role, setRole] = useState('')
         
     // Handle changes name input
     function handleNameChange(e){
@@ -16,23 +16,23 @@ import React, { useState } from 'react';
         setEmail(e.target.value);
     }
 
-    // Handle changes title input
-    function handleTitleChange(e){
-        setTitle(e.target.value);
+    // Handle changes role input
+    function handleRoleChange(e){
+        setRole(e.target.value);
     }
 
     // Handle form submission
     const newMember = {
         name: name,
         email: email,
-        title: title
+        role: role
     }
     const submitForm = element => {
         element.preventDefault();
         props.addNewMember(newMember);
         setName('');
         setEmail('');
-        setTitle('');
+        setRole('');
     }
 
     return(
@@ -55,9 +55,9 @@ import React, { useState } from 'react';
                 placeholder='email'
             >
             </input>
-            <label htmlFor='title'> Title </label>
-            <select id='titles' onChange={handleTitleChange} value={title}>
-                <option value='' disabled>select title</option>
+            <label htmlFor='role'> Role </label>
+            <select id='roles' onChange={handleRoleChange} value={role}>
+                <option value='' disabled>select role</option>
                 <option value="Front End Engineer">Front End Engineer</option>
                 <option value="Back End Engineer">Back End Engineer</option>
                 <option value="Full Stack Developer">Full Stack Developer</option>

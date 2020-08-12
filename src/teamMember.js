@@ -8,7 +8,7 @@ function Member({members}){
                 return <div key={member.id} className='member'>
                     <h3>{member.name}</h3>
                     <p>{member.email}</p>
-                    <p>{member.title}</p>
+                    <p>{member.role}</p>
                 </div>
             })}
         </div>

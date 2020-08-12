@@ -8,7 +8,7 @@ function App() {
     {id: 1,
     name: 'Mitch Fresh2o',
     email: 'emfresh2o1018@gmail.com',
-    title: 'Front-End React Engineer'
+    role: 'Front-End React Engineer'
   }]);
 
   const addNewMember = member => {
@@ -16,7 +16,7 @@ function App() {
       id: Date.now(),
       name: member.name,
       email: member.email,
-      title: member.title
+      role: member.role
     };
     setMembers([...members, newMember]);
   }
